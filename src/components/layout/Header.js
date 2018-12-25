@@ -5,7 +5,6 @@ import { slide as Burger } from "react-burger-menu";
 import { Menu } from "semantic-ui-react";
 
 import NavBar from "./NavBar";
-import NetguruLogo from "../../img/netguru_logo.png";
 
 export default class Header extends Component {
   constructor() {
@@ -15,7 +14,7 @@ export default class Header extends Component {
     };
   }
 
-  // Reacr burger menu doesn't work like that apparently
+  // React burger menu doesn't work like that apparently
   toggleMenu = () => {
     const isOpen = !this.state.isOpen;
     this.setState({ isOpen });
@@ -47,17 +46,9 @@ export default class Header extends Component {
         >
           <Menu.Item>
             <h1>
-              <span style={{ color: "#00d664" }}>BEER</span>
-              <span>GURU</span>
+              <span style={{ color: "#00d664" }}>Beer</span>
+              <span>Finder</span>
             </h1>
-            <MediaQuery minWidth={600}>
-              <span style={{ marginLeft: "5%" }}>by</span>
-              <img
-                alt="Netguru logo"
-                src={NetguruLogo}
-                style={{ height: "3rem", width: "auto" }}
-              />
-            </MediaQuery>
           </Menu.Item>
         </Link>
         <MediaQuery minWidth={600}>
